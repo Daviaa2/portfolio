@@ -1,16 +1,17 @@
 import { Outlet } from "react-router";
 import "./App.css";
+import Footer from "./common/Footer/footer";
 
 function App() {
   return (
     <>
       <header>
-        <h1>react router</h1>
+        <h1>Andrews Porftfolio website</h1>
       </header>
       <main>
         <Outlet />
       </main>
-      <footer>This is my Footer</footer>
+      <Footer/>
     </>
   );
 }
