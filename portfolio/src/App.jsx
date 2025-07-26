@@ -1,12 +1,18 @@
-import './App.css'
-import Home from './pages/Home/Home'
+import { Outlet } from "react-router";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <Home/>
+      <header>
+        <h1>react router</h1>
+      </header>
+      <main>
+        <Outlet />
+      </main>
+      <footer>This is my Footer</footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

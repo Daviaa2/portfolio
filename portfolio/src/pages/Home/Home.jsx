@@ -1,7 +1,11 @@
+import { Link } from "react-router"
+
 function Home() {
   return (
     <>
-      <h1>Welcome Home</h1>
+      <p>This is the Home Page</p>
+      <Link to='/'>Home</Link>
+      <Link to='BusinessAnalyst'>Business Analyst</Link>
     </>
   )
 }
