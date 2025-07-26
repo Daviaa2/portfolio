@@ -1,7 +1,8 @@
 import { Link } from "react-router";
-import Header from "./Components/Header";
+import Header from "../../common/Header/Header";
 import Card from "../../common/Card/Card";
 import styles from "./Home.module.css";
+import leanCanvas from "../../assets/CardPhotos/leanCanvas.jpg";
 
 function Home() {
   return (
@@ -15,7 +16,7 @@ function Home() {
             to="/BusinessAnalyst"
             title="Business Analyst"
             description="10 week Intership with Lean Canvas through Mission Ready"
-            imageText="BA Projects"
+            imageText={leanCanvas}
           />
         </div>
       </main>

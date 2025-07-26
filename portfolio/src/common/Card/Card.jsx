@@ -6,7 +6,7 @@ const Card = ({ to, title, description, imageText }) => {
     <Link to={to} className={styles.cardLink}>
       <div className={styles.container}>
         <div className={styles.image}>
-          <h1>{imageText || "Card Image"}</h1>
+          <img src={imageText} alt="" />
         </div>
         <div className={styles.title}>
           <h1>{title || "Card Title"}</h1>
