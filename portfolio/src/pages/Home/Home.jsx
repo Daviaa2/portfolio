@@ -1,13 +1,24 @@
 import { Link } from "react-router";
-import Header from "../../common/Header/Header";
+import Header from "./Components/Header";
+import Card from "../../common/Card/Card";
+import styles from "./Home.module.css";
 
 function Home() {
   return (
     <>
-      <Header/>
-      <p>This is the Home Page</p>
-      <Link to="/">Home</Link>
-      <Link to="BusinessAnalyst">Business Analyst</Link>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <div className={styles.projects}>
+          <Card
+            to="/BusinessAnalyst"
+            title="Business Analyst"
+            description="10 week Intership with Lean Canvas through Mission Ready"
+            imageText="BA Projects"
+          />
+        </div>
+      </main>
     </>
   );
 }

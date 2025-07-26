@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
-import backGroundImage from "../../assets/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg";
+import backGroundImage from "../../../assets/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg";
+
 
 const Header = () => {
   return (
