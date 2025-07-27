@@ -1,0 +1,229 @@
+/* Business Analyst Page Styles */
+
+/* Header Styles */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content Container */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+/* Common Section Styles */
+.overview,
+.statement,
+.responsibilities,
+.deliverables,
+.outcomes,
+.reflection,
+.tools {
+  background: white;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #667eea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.overview:hover,
+.statement:hover,
+.responsibilities:hover,
+.deliverables:hover,
+.outcomes:hover,
+.reflection:hover,
+.tools:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Headers */
+.overview h1,
+.statement h1,
+.responsibilities h1,
+.deliverables h1,
+.outcomes h1,
+.reflection h1,
+.tools h1 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Subheadings */
+.subheading {
+  color: #555;
+  font-size: 1.2rem;
+  margin: 20px 0 15px 0;
+  font-weight: 600;
+}
+
+/* Paragraph Styles */
+.paragraph {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* List Styles */
+.list {
+  margin: 15px 0;
+  padding-left: 0;
+}
+
+.listItem {
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+  list-style: none;
+}
+
+.listItem::before {
+  content: "→";
+  color: #667eea;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Specific Section Styling */
+.overview {
+  border-left-color: #4facfe;
+}
+
+.statement {
+  border-left-color: #f093fb;
+}
+
+.responsibilities {
+  border-left-color: #4facfe;
+}
+
+.deliverables {
+  border-left-color: #43e97b;
+}
+
+.outcomes {
+  border-left-color: #fa709a;
+}
+
+.reflection {
+  border-left-color: #667eea;
+}
+
+.tools {
+  border-left-color: #ffecd2;
+  border-left-width: 5px;
+}
+
+/* Challenge Section Special Styling */
+.statement {
+  background: linear-gradient(135deg, #ffeef8 0%, #fff0f8 100%);
+}
+
+/* Tools Section Special Styling */
+.tools {
+  background: linear-gradient(135deg, #fff9e6 0%, #fffaf0 100%);
+}
+
+/* Reflection Section Special Styling */
+.reflection {
+  background: linear-gradient(135deg, #e6f3ff 0%, #f0f8ff 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 40px 15px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .main {
+    padding: 0 15px;
+  }
+
+  .overview,
+  .statement,
+  .responsibilities,
+  .deliverables,
+  .outcomes,
+  .reflection,
+  .tools {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .overview h1,
+  .statement h1,
+  .responsibilities h1,
+  .deliverables h1,
+  .outcomes h1,
+  .reflection h1,
+  .tools h1 {
+    font-size: 1.5rem;
+  }
+
+  .listItem {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .overview,
+  .statement,
+  .responsibilities,
+  .deliverables,
+  .outcomes,
+  .reflection,
+  .tools {
+    padding: 15px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header {
+    background: #667eea !important;
+    color: white !important;
+  }
+
+  .overview,
+  .statement,
+  .responsibilities,
+  .deliverables,
+  .outcomes,
+  .reflection,
+  .tools {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+}
